@@ -1,0 +1,55 @@
+:root {
+    --input-height: 40px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FEF5ED;
+}
+
+.container > .card {
+    margin: 50px 250px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.container > .card > .card-body > #form-todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container > .card > #todo-list {
+    height: 60vh;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+input[type=text] {
+    width: 100%;
+    height: var(--input-height);
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#btn-create-todo {
+    width: 100px;
+    height: var(--input-height);
+    margin-left: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0.5rem 2rem;
+    padding: 0;
+}
+ul > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
